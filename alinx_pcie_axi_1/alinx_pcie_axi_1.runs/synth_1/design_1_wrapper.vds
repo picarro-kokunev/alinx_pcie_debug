@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu Aug 13 11:56:00 2026
-# Process ID         : 2855534
+# Start of session at: Fri Aug 14 18:40:28 2026
+# Process ID         : 807611
 # Current directory  : /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.runs/synth_1
 # Command line       : vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.runs/synth_1/design_1_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 26.04 LTS
 # Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
-# CPU Frequency      : 1544.316 MHz
+# CPU Frequency      : 800.412 MHz
 # CPU Physical cores : 12
 # CPU Logical cores  : 20
 # Host memory        : 65777 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 74367 MB
-# Available Virtual  : 57443 MB
+# Available Virtual  : 65522 MB
 #-----------------------------------------------------------
 WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/kokunev/.Xilinx/Vivado/2025.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2025.psg' discarded because strategy with same name already parsed from '/opt/Xilinx_2/2025.2/Vivado/strategies/VDI2025.psg'
 WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/kokunev/.Xilinx/Vivado/2025.2/strategies/Vivado Implementation Defaults_2.Vivado Implementation 2025.psg' discarded because strategy with same name already parsed from '/opt/Xilinx_2/2025.2/Vivado/strategies/VDI2025.psg'
@@ -42,9 +42,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2855604
+INFO: [Synth 8-7075] Helper process launched with PID 808097
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2279.898 ; gain = 479.961 ; free physical = 25573 ; free virtual = 53372
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2285.031 ; gain = 480.156 ; free physical = 43946 ; free virtual = 60882
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'RdDeQ', assumed default net type 'wire' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/d6c9/hdl/verilog/axidma_fifo.vh:179]
 INFO: [Synth 8-11241] undeclared symbol 'cfg_config_space_enable', assumed default net type 'wire' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:4347]
@@ -174,11 +174,11 @@ INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [/home/k
 	Parameter C_HAS_SINIT bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_22' declared at '/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/782b/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4289' bound to instance 'U0' of component 'c_counter_binary_v12_0_22' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:125]
 INFO: [Synth 8-256] done synthesizing module 'design_1_c_counter_binary_0_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:66]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:59]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:63]
 INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:53]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:260]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:262]
 INFO: [Synth 8-6157] synthesizing module 'bd_f60c' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:10]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:44]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:47]
 INFO: [Synth 8-6157] synthesizing module 'bd_f60c_ila_lib_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:48]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
 INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
@@ -192,13 +192,13 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [/opt/Xilinx_2/2025.2/Vivado/
 INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165423]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
-INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
-INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
-INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
-INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
-INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
-INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
-INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3225]
+INFO: [Synth 8-7071] port 'clk_nobuf' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
+INFO: [Synth 8-7071] port 'clkdiv_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
+INFO: [Synth 8-7071] port 'trig_in' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
+INFO: [Synth 8-7071] port 'trig_in_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
+INFO: [Synth 8-7071] port 'trig_out' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
+INFO: [Synth 8-7071] port 'trig_out_ack' of module 'ila_v6_2_19_ila' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
+INFO: [Synth 8-7023] instance 'inst' of module 'ila_v6_2_19_ila' has 1033 connections declared, but only 1027 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:3227]
 INFO: [Synth 8-6155] done synthesizing module 'bd_f60c_ila_lib_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:48]
 INFO: [Synth 8-6155] done synthesizing module 'bd_f60c' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:53]
@@ -218,8 +218,24 @@ INFO: [Synth 8-113] binding component instance 'IBUF_N_I' to cell 'IBUF' [/home/
 INFO: [Synth 8-113] binding component instance 'IBUFDS_GTE2_I' to cell 'IBUFDS_GTE2' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:375]
 INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:303]
 INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/synth/design_1_util_ds_buf_0.vhd:65]
-WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'design_1_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:70]
-WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'design_1_util_ds_buf_0' has 4 connections declared, but only 3 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:70]
+WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'design_1_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:75]
+WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'design_1_util_ds_buf_0' has 4 connections declared, but only 3 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:75]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUF_TYPE bound to: BUFG - type: string 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+	Parameter C_DIVBY2 bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at '/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:73' bound to instance 'U0' of component 'util_ds_buf' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf__parameterized1' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:303]
+INFO: [Synth 8-113] binding component instance 'BUFG_U' to cell 'BUFG' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:918]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf__parameterized1' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:303]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/synth/design_1_vio_0_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/synth/design_1_vio_0_0.v:49]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0_core_top' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:60]
 INFO: [Synth 8-6157] synthesizing module 'dma_pcie_axis_rq_if' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/d6c9/hdl/verilog/dma_pcie_axis_rq_if.svh:3]
@@ -821,7 +837,6 @@ INFO: [Synth 8-251] [1'b0]  ROWS_RX 1 COLS_RX 4 [/home/kokunev/data/git_root/ali
 INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0_pcie2_ip_pcie_brams_7x' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_brams_7x.v:65]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0_pcie2_ip_pcie_bram_7x' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_bram_7x.v:63]
 INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' [/opt/Xilinx_2/2025.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
-INFO: [Synth 8-6157] synthesizing module 'RAMB36E1' [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:159948]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6155] done synthesizing module 'RAMB36E1' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:159948]
 INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' (0#1) [/opt/Xilinx_2/2025.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
@@ -838,46 +853,46 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/kokunev
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0_pcie2_ip_gt_rx_valid_filter_7x' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_gt_rx_valid_filter_7x.v:62]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
 INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2740]
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:95844]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-226] default block is never used [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_eq.v:402]
 INFO: [Synth 8-226] default block is never used [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_user.v:354]
 INFO: [Synth 8-7071] port 'cfg_fc_vc_sel' of module 'design_1_xdma_0_0_core_top' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0.sv:598]
 INFO: [Synth 8-7023] instance 'inst' of module 'design_1_xdma_0_0_core_top' has 1313 connections declared, but only 1312 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0.sv:598]
-WARNING: [Synth 8-7071] port 'axi_aresetn' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 64 connections declared, but only 34 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:74]
-INFO: [Synth 8-3848] Net sl_iport0 in module/entity bd_f60c_ila_lib_0 does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:114]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:260]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lib'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:44]
+WARNING: [Synth 8-7071] port 'axi_aresetn' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 64 connections declared, but only 34 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+INFO: [Synth 8-3848] Net sl_iport0 in module/entity bd_f60c_ila_lib_0 does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:116]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:262]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lib'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:47]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity design_1_vio_0_0 does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/synth/design_1_vio_0_0.v:71]
 Reason is one or more of the following :
 	1: Only 1 word in RAM 
 Reason is one or more of the following :
@@ -1031,8 +1046,8 @@ WARNING: [Synth 8-3848] Net pipe_debug_6 in module/entity design_1_xdma_0_0_core
 WARNING: [Synth 8-3848] Net pipe_debug_7 in module/entity design_1_xdma_0_0_core_top does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:3003]
 WARNING: [Synth 8-3848] Net pipe_debug_8 in module/entity design_1_xdma_0_0_core_top does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:3004]
 WARNING: [Synth 8-3848] Net pipe_debug_9 in module/entity design_1_xdma_0_0_core_top does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:3005]
-WARNING: [Synth 8-3848] Net pipe_debug in module/entity design_1_xdma_0_0_core_top does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:3006]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:82]
 WARNING: [Synth 8-7129] Port Din[24] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
@@ -1135,21 +1150,22 @@ WARNING: [Synth 8-7129] Port PLM_IN_RS in module design_1_xdma_0_0_pcie2_ip_gt_r
 WARNING: [Synth 8-7129] Port pipe_tx_reset in module design_1_xdma_0_0_pcie2_ip_gt_top is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3033.531 ; gain = 1233.594 ; free physical = 24824 ; free virtual = 52634
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3047.664 ; gain = 1242.789 ; free physical = 43333 ; free virtual = 60278
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3033.531 ; gain = 1233.594 ; free physical = 24825 ; free virtual = 52634
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3047.664 ; gain = 1242.789 ; free physical = 43354 ; free virtual = 60299
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3033.531 ; gain = 1233.594 ; free physical = 24825 ; free virtual = 52634
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3047.664 ; gain = 1242.789 ; free physical = 43354 ; free virtual = 60299
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3033.531 ; gain = 0.000 ; free physical = 24837 ; free virtual = 52647
+Netlist sorting complete. Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3047.664 ; gain = 0.000 ; free physical = 43328 ; free virtual = 60273
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf_0/U0/<const0>.
 WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf/U0/<const0>.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -1176,6 +1192,10 @@ Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_
 Finished Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'design_1_i/system_ila_0/inst/ila_lib/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
 Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.srcs/constrs_1/imports/new/alinx.xdc]
 Finished Parsing XDC File [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.srcs/constrs_1/imports/new/alinx.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.srcs/constrs_1/imports/new/alinx.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -1196,28 +1216,28 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 23 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3073.551 ; gain = 0.000 ; free physical = 24852 ; free virtual = 52661
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3087.684 ; gain = 0.000 ; free physical = 43362 ; free virtual = 60307
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 81 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 68 instances
-  CFGLUT5 => SRLC32E: 13 instances
+  A total of 86 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 72 instances
+  CFGLUT5 => SRLC32E: 14 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3085.473 ; gain = 0.008 ; free physical = 24817 ; free virtual = 52627
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3099.605 ; gain = 0.000 ; free physical = 43355 ; free virtual = 60301
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3085.473 ; gain = 1285.535 ; free physical = 23422 ; free virtual = 51233
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3099.605 ; gain = 1294.730 ; free physical = 42001 ; free virtual = 58962
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3093.477 ; gain = 1293.539 ; free physical = 23421 ; free virtual = 51232
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 42001 ; free virtual = 58961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3093.477 ; gain = 1293.539 ; free physical = 23405 ; free virtual = 51215
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 41991 ; free virtual = 58951
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
@@ -1389,6 +1409,10 @@ got a mismatch blk_mem_gen_v8_4_12_blk_mem_input_block__parameterized0
 got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_generic_cstr__parameterized0
 got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_mux
 got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_mux__parameterized0
+got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_width__parameterized0
+got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_wrapper__parameterized0
+got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_width__parameterized3
+got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_width__parameterized4
 got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_width__parameterized5
 got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_wrapper__parameterized5
 got a mismatch blk_mem_gen_v8_4_12_blk_mem_gen_prim_width__parameterized6
@@ -1428,10 +1452,10 @@ got a mismatch xdma_v4_2_2_GenericFIFO__parameterized3
 got a mismatch xdma_v4_2_2_GenericFIFO__parameterized4
 WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 3093.477 ; gain = 1293.539 ; free physical = 22412 ; free virtual = 50231
+Finished Doing Graph Differ : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 40791 ; free virtual = 57740
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 3093.477 ; gain = 1293.539 ; free physical = 22412 ; free virtual = 50231
+Finished Preparing Guide Design : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 40791 ; free virtual = 57740
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
@@ -1444,6 +1468,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized7'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized8'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized9'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized10'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_3_generic_memrd'
 INFO: [Synth 8-802] inferred FSM for state register 'wrdatasm_cs_reg' in module 'xdma_v4_2_2_axi_mm_master_omulti_wr_v'
 INFO: [Synth 8-802] inferred FSM for state register 'memreqsm_cs_reg' in module 'xdma_v4_2_2_axi_str_masterbr_wrrd_br_v'
@@ -1575,6 +1600,15 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
                      S2P |                             1000 |                             1000
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized10'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1874,7 +1908,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'resetovrd.fsm_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'txsync_fsm.fsm_tx_reg' using encoding 'one-hot' in module 'design_1_xdma_0_0_pcie2_ip_pipe_sync'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 3093.477 ; gain = 1293.539 ; free physical = 19845 ; free virtual = 47662
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 38278 ; free virtual = 55234
 ---------------------------------------------------------------------------------
 
 
@@ -2190,8 +2224,11 @@ INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[
 INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_eq.pipe_eq_i/rxeq_scan_i/FSM_onehot_fsm_reg[0]) is unused and will be removed from module design_1_xdma_0_0_pcie2_ip_pcie2_top.
 INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_eq.pipe_eq_i/FSM_onehot_fsm_rx_reg[0]) is unused and will be removed from module design_1_xdma_0_0_pcie2_ip_pcie2_top.
 INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_sync_i/FSM_onehot_txsync_fsm.fsm_tx_reg[0]) is unused and will be removed from module design_1_xdma_0_0_pcie2_ip_pcie2_top.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 3109.488 ; gain = 1309.551 ; free physical = 18662 ; free virtual = 46569
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 3123.621 ; gain = 1318.746 ; free physical = 35236 ; free virtual = 52341
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -2199,13 +2236,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/inverted_reset_inferred/i_0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:37 ; elapsed = 00:01:16 . Memory (MB): peak = 3109.488 ; gain = 1309.551 ; free physical = 19473 ; free virtual = 47448
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:01:16 . Memory (MB): peak = 3123.621 ; gain = 1318.746 ; free physical = 36356 ; free virtual = 53525
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:01:24 . Memory (MB): peak = 3187.176 ; gain = 1387.238 ; free physical = 19498 ; free virtual = 47473
+Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:01:25 . Memory (MB): peak = 3193.316 ; gain = 1388.441 ; free physical = 36468 ; free virtual = 53639
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -2221,7 +2258,7 @@ INFO: [Synth 8-7052] The timing for the instance design_1_i/xdma_0/inst/udma_wra
 INFO: [Synth 8-7067] Removed DRAM instance design_1_i/xdma_0/inst/udma_wrapper/dma_topi_4/dma_top/dma_enable.wb_eng.dma_pcie_wb_eng/axidma_wb_arb/Fifowhead.fifoInfo/MemArray_reg_0_3_24_29 from module xdma_v4_2_2_udma_top__GB3_tempName due to constant propagation
 INFO: [Synth 8-7067] Removed DRAM instance design_1_i/xdma_0/inst/udma_wrapper/dma_topi_4/dma_top/dma_enable.wb_eng.dma_pcie_wb_eng/WB_DAT_FIFO/MemArray_reg_0_3_24_29 from module xdma_v4_2_2_udma_top__GB3_tempName due to constant propagation
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:01:32 . Memory (MB): peak = 3226.117 ; gain = 1426.180 ; free physical = 18814 ; free virtual = 46813
+Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:01:33 . Memory (MB): peak = 3232.258 ; gain = 1427.383 ; free physical = 35788 ; free virtual = 53146
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2246,6 +2283,8 @@ Finished Final Netlist Cleanup
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:12676]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:12671]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:12669]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
 WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
@@ -2341,41 +2380,39 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:240]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:240]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:240]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:54 ; elapsed = 00:01:37 . Memory (MB): peak = 3324.016 ; gain = 1524.078 ; free physical = 18680 ; free virtual = 46748
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:01:38 . Memory (MB): peak = 3329.156 ; gain = 1524.281 ; free physical = 35696 ; free virtual = 53103
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:54 ; elapsed = 00:01:37 . Memory (MB): peak = 3324.016 ; gain = 1524.078 ; free physical = 18680 ; free virtual = 46748
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:01:38 . Memory (MB): peak = 3329.156 ; gain = 1524.281 ; free physical = 35701 ; free virtual = 53108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:56 ; elapsed = 00:01:39 . Memory (MB): peak = 3342.727 ; gain = 1542.789 ; free physical = 18644 ; free virtual = 46712
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35719 ; free virtual = 53127
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:01:39 . Memory (MB): peak = 3342.727 ; gain = 1542.789 ; free physical = 18644 ; free virtual = 46712
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35719 ; free virtual = 53127
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:01:39 . Memory (MB): peak = 3342.727 ; gain = 1542.789 ; free physical = 18445 ; free virtual = 46517
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35720 ; free virtual = 53129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:01:39 . Memory (MB): peak = 3342.727 ; gain = 1542.789 ; free physical = 18437 ; free virtual = 46509
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35720 ; free virtual = 53129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2391,19 +2428,19 @@ Report Cell Usage:
 +------+--------------+------+
 |      |Cell          |Count |
 +------+--------------+------+
-|1     |BUFG          |     4|
+|1     |BUFG          |     5|
 |2     |BUFGCTRL      |     1|
-|3     |CARRY4        |   562|
-|4     |CFGLUT5       |    81|
+|3     |CARRY4        |   564|
+|4     |CFGLUT5       |    86|
 |5     |GTPE2_CHANNEL |     2|
 |6     |GTPE2_COMMON  |     1|
 |7     |IBUFDS_GTE2   |     1|
-|8     |LUT1          |  1326|
-|9     |LUT2          |  1348|
-|10    |LUT3          |  3348|
-|11    |LUT4          |  2211|
-|12    |LUT5          |  2392|
-|13    |LUT6          |  4690|
+|8     |LUT1          |  1327|
+|9     |LUT2          |  1353|
+|10    |LUT3          |  3384|
+|11    |LUT4          |  2252|
+|12    |LUT5          |  2391|
+|13    |LUT6          |  4770|
 |14    |MMCME2_ADV    |     1|
 |15    |MUXCY         |    25|
 |16    |MUXF7         |   160|
@@ -2413,56 +2450,58 @@ Report Cell Usage:
 |20    |RAM32M        |   383|
 |21    |RAM32X1D      |    18|
 |22    |RAM64X1S      |     9|
-|23    |RAMB18E1      |     6|
-|26    |RAMB36E1      |    23|
-|35    |SRL16E        |    36|
-|36    |SRLC16E       |     2|
-|37    |SRLC32E       |    24|
-|38    |XORCY         |    26|
-|39    |FDCE          |    56|
-|40    |FDPE          |    44|
-|41    |FDRE          | 15975|
-|42    |FDSE          |   119|
-|43    |IBUF          |     3|
-|44    |OBUF          |     2|
+|23    |RAMB18E1      |     5|
+|25    |RAMB36E1      |    24|
+|33    |SRL16E        |    37|
+|34    |SRLC16E       |     2|
+|35    |SRLC32E       |    24|
+|36    |XORCY         |    26|
+|37    |FDCE          |    56|
+|38    |FDPE          |    44|
+|39    |FDRE          | 16254|
+|40    |FDSE          |   121|
+|41    |IBUF          |     3|
+|42    |OBUF          |     2|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:01:39 . Memory (MB): peak = 3342.727 ; gain = 1542.789 ; free physical = 18429 ; free virtual = 46501
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:01:41 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35724 ; free virtual = 53133
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 28154 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:47 ; elapsed = 00:01:32 . Memory (MB): peak = 3346.641 ; gain = 1494.762 ; free physical = 24190 ; free virtual = 52263
-Synthesis Optimization Complete : Time (s): cpu = 00:01:57 ; elapsed = 00:01:41 . Memory (MB): peak = 3346.641 ; gain = 1546.703 ; free physical = 24238 ; free virtual = 52273
+Synthesis finished with 0 errors, 0 critical warnings and 28261 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:57 ; elapsed = 00:01:32 . Memory (MB): peak = 3350.781 ; gain = 1493.965 ; free physical = 41622 ; free virtual = 59031
+Synthesis Optimization Complete : Time (s): cpu = 00:02:08 ; elapsed = 00:01:41 . Memory (MB): peak = 3350.781 ; gain = 1545.906 ; free physical = 41668 ; free virtual = 59040
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3365.508 ; gain = 0.000 ; free physical = 24191 ; free virtual = 52224
+Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3369.648 ; gain = 0.000 ; free physical = 41666 ; free virtual = 59037
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 1327 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1334 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf_0/U0/<const0>.
 WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf/U0/<const0>.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
 INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/inst/ila_lib UUID: cd4c83c8-23a6-596d-99ad-09be1335c6b0 
+INFO: [Chipscope 16-324] Core: design_1_i/vio_0 UUID: 01a4b594-7c44-5fa6-bd66-f70f5f031273 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3429.375 ; gain = 0.000 ; free physical = 24209 ; free virtual = 52242
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3436.484 ; gain = 0.000 ; free physical = 41608 ; free virtual = 58981
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 516 instances were transformed.
+  A total of 521 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 7 instances
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 68 instances
-  CFGLUT5 => SRLC32E: 13 instances
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 72 instances
+  CFGLUT5 => SRLC32E: 14 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 18 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 383 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 18 instances
   RAM64X1S => RAM64X1S (RAMS64E): 9 instances
 
-Synth Design complete | Checksum: 4455cd75
+Synth Design complete | Checksum: afee1d05
 INFO: [Common 17-83] Releasing license: Synthesis
-763 Infos, 402 Warnings, 0 Critical Warnings and 0 Errors encountered.
+776 Infos, 404 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:01:50 . Memory (MB): peak = 3429.410 ; gain = 1815.535 ; free physical = 24215 ; free virtual = 52248
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8691.781; main = 2385.842; forked = 6696.419
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17859.242; main = 3429.379; forked = 14753.668
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3453.387 ; gain = 0.000 ; free physical = 24216 ; free virtual = 52251
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:01:50 . Memory (MB): peak = 3436.520 ; gain = 1819.676 ; free physical = 41611 ; free virtual = 58984
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8811.821; main = 2504.104; forked = 6774.764
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17886.984; main = 3436.488; forked = 14767.277
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3460.496 ; gain = 0.000 ; free physical = 41614 ; free virtual = 58989
 INFO: [Common 17-1381] The checkpoint '/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3453.387 ; gain = 23.977 ; free physical = 24373 ; free virtual = 52454
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3460.496 ; gain = 23.977 ; free physical = 41601 ; free virtual = 59018
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 13 11:58:00 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 14 18:42:28 2026...

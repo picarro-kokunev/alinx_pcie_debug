@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Thu Aug 13 11:51:15 2026
+//Date        : Fri Aug 14 18:40:25 2026
 //Host        : emerald running 64-bit Ubuntu 26.04 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (LED,
     pcie_7x_mgt_rtl_0_rxn,
@@ -41,6 +41,7 @@ module design_1
   (* CONN_BUS_INFO = "Conn xilinx.com:display_xdma:pcie_debug:1.0 None cfg_negotiated_width" *) (* DONT_TOUCH *) wire [3:0]Conn_cfg_negotiated_width;
   wire [0:0]LED;
   wire [25:0]c_counter_binary_0_Q;
+  wire [0:0]ilvector_logic_0_Res;
   wire [1:0]pcie_7x_mgt_rtl_0_rxn;
   wire [1:0]pcie_7x_mgt_rtl_0_rxp;
   wire [1:0]pcie_7x_mgt_rtl_0_txn;
@@ -48,7 +49,9 @@ module design_1
   wire [0:0]pcie_clk_clk_n;
   wire [0:0]pcie_clk_clk_p;
   wire sys_rst_n;
+  wire [0:0]util_ds_buf_0_BUFG_O;
   wire [0:0]util_ds_buf_IBUF_OUT;
+  wire [0:0]vio_0_probe_out0;
   wire xdma_0_axi_aclk;
   wire xdma_0_user_lnk_up;
 
@@ -56,6 +59,7 @@ module design_1
   design_1_c_counter_binary_0_0 c_counter_binary_0
        (.CLK(xdma_0_axi_aclk),
         .Q(c_counter_binary_0_Q));
+  assign ilvector_logic_0_Res = vio_0_probe_out0 & sys_rst_n;
   design_1_system_ila_0_0 system_ila_0
        (.SLOT_0_PCIE_DEBUG_cfg_current_speed(Conn_cfg_current_speed),
         .SLOT_0_PCIE_DEBUG_cfg_err_cor(Conn_cfg_err_cor),
@@ -66,11 +70,18 @@ module design_1
         .SLOT_0_PCIE_DEBUG_cfg_ltssm_state(Conn_cfg_ltssm_state),
         .SLOT_0_PCIE_DEBUG_cfg_negotiated_width(Conn_cfg_negotiated_width),
         .clk(xdma_0_axi_aclk),
-        .probe0(xdma_0_user_lnk_up));
+        .probe0(xdma_0_user_lnk_up),
+        .probe1(ilvector_logic_0_Res));
   design_1_util_ds_buf_0 util_ds_buf
        (.IBUF_DS_N(pcie_clk_clk_n),
         .IBUF_DS_P(pcie_clk_clk_p),
         .IBUF_OUT(util_ds_buf_IBUF_OUT));
+  design_1_util_ds_buf_0_0 util_ds_buf_0
+       (.BUFG_I(util_ds_buf_IBUF_OUT),
+        .BUFG_O(util_ds_buf_0_BUFG_O));
+  design_1_vio_0_0 vio_0
+       (.clk(util_ds_buf_0_BUFG_O),
+        .probe_out0(vio_0_probe_out0));
   design_1_xdma_0_0 xdma_0
        (.axi_aclk(xdma_0_axi_aclk),
         .cfg_current_speed_o(Conn_cfg_current_speed),
@@ -103,7 +114,7 @@ module design_1
         .pci_exp_txn(pcie_7x_mgt_rtl_0_txn),
         .pci_exp_txp(pcie_7x_mgt_rtl_0_txp),
         .sys_clk(util_ds_buf_IBUF_OUT),
-        .sys_rst_n(sys_rst_n),
+        .sys_rst_n(ilvector_logic_0_Res),
         .user_lnk_up(xdma_0_user_lnk_up),
         .usr_irq_req(1'b0));
   design_1_xlslice_0_0 xlslice_0

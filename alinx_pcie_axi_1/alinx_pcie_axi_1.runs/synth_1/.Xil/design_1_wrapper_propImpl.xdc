@@ -49,7 +49,7 @@ set_property src_info {type:XDC file:4 line:17 export:INPUT save:INPUT read:READ
 set_property -dict {PACKAGE_PIN L13 IOSTANDARD LVCMOS33} [get_ports {LED[0]}]
 set_property src_info {type:XDC file:4 line:23 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN K13 IOSTANDARD LVCMOS33 } [get_ports {user_lnk_up}]
-set_property src_info {type:XDC file:4 line:27 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:4 line:29 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN F10} [get_ports pcie_clk_clk_p]
 current_instance design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst
 set_property src_info {type:SCOPED_XDC file:5 line:78 export:INPUT save:INPUT read:READ} [current_design]

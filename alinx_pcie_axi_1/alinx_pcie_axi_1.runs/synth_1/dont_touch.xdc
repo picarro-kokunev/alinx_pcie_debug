@@ -42,6 +42,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f60c || 
 # IP: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_f60c_ila_lib_0 || ORIG_REF_NAME==bd_f60c_ila_lib_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_vio_0_0 || ORIG_REF_NAME==design_1_vio_0_0} -quiet] -quiet
+
+# IP: bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_util_ds_buf_0_0 || ORIG_REF_NAME==design_1_util_ds_buf_0_0} -quiet] -quiet
+
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==pcie2_fifo_generator_tgt_brdg || ORIG_REF_NAME==pcie2_fifo_generator_tgt_brdg} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
@@ -73,6 +79,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/design_1_util_ds_buf_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_util_ds_buf_0 || ORIG_REF_NAME==design_1_util_ds_buf_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
+# XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c_ooc.xdc
+
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_f60c_ila_lib_0 || ORIG_REF_NAME==bd_f60c_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
@@ -81,8 +89,14 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/bd_f60c_ila_lib_0_ooc.xdc
 
-# XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/bd_f60c_ooc.xdc
-
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0_ooc.xdc
+
+# XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_vio_0_0 || ORIG_REF_NAME==design_1_vio_0_0} -quiet] -quiet
+
+# XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc
+
+# XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_util_ds_buf_0_0 || ORIG_REF_NAME==design_1_util_ds_buf_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/design_1_ooc.xdc

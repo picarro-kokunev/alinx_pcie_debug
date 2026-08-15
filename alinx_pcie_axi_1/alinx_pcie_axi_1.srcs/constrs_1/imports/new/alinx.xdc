@@ -23,6 +23,8 @@ set_property -dict {PACKAGE_PIN L13 IOSTANDARD LVCMOS33} [get_ports {LED[0]}]
 set_property -dict { PACKAGE_PIN K13 IOSTANDARD LVCMOS33 } [get_ports {user_lnk_up}]
 
 set_false_path -from [get_ports sys_rst_n]
+# async reset signal
+set_false_path -through [get_nets -hierarchical -filter {NAME =~ *ilvector_logic_0_Res*}]
 ###############################################################################
 set_property -dict {PACKAGE_PIN F10} [get_ports pcie_clk_clk_p]
 create_clock -period 10.000 -name pcie_clk [get_ports pcie_clk_clk_p]
