@@ -17,7 +17,9 @@ module bd_f60c
     SLOT_0_PCIE_DEBUG_cfg_local_error_valid,
     SLOT_0_PCIE_DEBUG_cfg_ltssm_state,
     SLOT_0_PCIE_DEBUG_cfg_negotiated_width,
-    clk);
+    clk,
+    probe0,
+    probe1);
   (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_current_speed" *) (* X_INTERFACE_MODE = "Monitor SlaveType" *) input [2:0]SLOT_0_PCIE_DEBUG_cfg_current_speed;
   (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_err_cor" *) input SLOT_0_PCIE_DEBUG_cfg_err_cor;
   (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_err_fatal" *) input SLOT_0_PCIE_DEBUG_cfg_err_fatal;
@@ -26,7 +28,9 @@ module bd_f60c
   (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_local_error_valid" *) input SLOT_0_PCIE_DEBUG_cfg_local_error_valid;
   (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_ltssm_state" *) input [5:0]SLOT_0_PCIE_DEBUG_cfg_ltssm_state;
   (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_negotiated_width" *) input [3:0]SLOT_0_PCIE_DEBUG_cfg_negotiated_width;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_0_AXI, ASSOCIATED_RESET resetn, CLK_DOMAIN design_1_xdma_0_0_axi_aclk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_1_AXI, ASSOCIATED_RESET resetn, CLK_DOMAIN design_1_xdma_0_0_axi_aclk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
+  input [0:0]probe0;
+  input [0:0]probe1;
 
   wire [2:0]SLOT_0_PCIE_DEBUG_cfg_current_speed;
   wire SLOT_0_PCIE_DEBUG_cfg_err_cor;
@@ -37,15 +41,19 @@ module bd_f60c
   wire [5:0]SLOT_0_PCIE_DEBUG_cfg_ltssm_state;
   wire [3:0]SLOT_0_PCIE_DEBUG_cfg_negotiated_width;
   wire clk;
+  wire [0:0]probe0;
+  wire [0:0]probe1;
 
   bd_f60c_ila_lib_0 ila_lib
        (.clk(clk),
-        .probe0(SLOT_0_PCIE_DEBUG_cfg_current_speed),
-        .probe1(SLOT_0_PCIE_DEBUG_cfg_err_cor),
-        .probe2(SLOT_0_PCIE_DEBUG_cfg_err_fatal),
-        .probe3(SLOT_0_PCIE_DEBUG_cfg_err_nonfatal),
-        .probe4(SLOT_0_PCIE_DEBUG_cfg_local_error),
-        .probe5(SLOT_0_PCIE_DEBUG_cfg_local_error_valid),
-        .probe6(SLOT_0_PCIE_DEBUG_cfg_ltssm_state),
-        .probe7(SLOT_0_PCIE_DEBUG_cfg_negotiated_width));
+        .probe0(probe0),
+        .probe1(probe1),
+        .probe2(SLOT_0_PCIE_DEBUG_cfg_current_speed),
+        .probe3(SLOT_0_PCIE_DEBUG_cfg_err_cor),
+        .probe4(SLOT_0_PCIE_DEBUG_cfg_err_fatal),
+        .probe5(SLOT_0_PCIE_DEBUG_cfg_err_nonfatal),
+        .probe6(SLOT_0_PCIE_DEBUG_cfg_local_error),
+        .probe7(SLOT_0_PCIE_DEBUG_cfg_local_error_valid),
+        .probe8(SLOT_0_PCIE_DEBUG_cfg_ltssm_state),
+        .probe9(SLOT_0_PCIE_DEBUG_cfg_negotiated_width));
 endmodule

@@ -55,6 +55,8 @@
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_system_ila_0_0 (
   clk,
+  probe0,
+  probe1,
   SLOT_0_PCIE_DEBUG_cfg_negotiated_width,
   SLOT_0_PCIE_DEBUG_cfg_current_speed,
   SLOT_0_PCIE_DEBUG_cfg_err_cor,
@@ -67,8 +69,10 @@ module design_1_system_ila_0_0 (
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_xdma_0_0_axi_aclk, ASSOCIATED_BUSIF SLOT_0_AXI, ASSOCIATED_RESET resetn, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_xdma_0_0_axi_aclk, ASSOCIATED_BUSIF SLOT_1_AXI, ASSOCIATED_RESET resetn, INSERT_VIP 0" *)
 input wire clk;
+input wire [0 : 0] probe0;
+input wire [0 : 0] probe1;
 (* X_INTERFACE_INFO = "xilinx.com:display_xdma:pcie_debug:1.0 SLOT_0_PCIE_DEBUG cfg_negotiated_width" *)
 (* X_INTERFACE_MODE = "monitor slave" *)
 input wire [3 : 0] SLOT_0_PCIE_DEBUG_cfg_negotiated_width;
@@ -89,6 +93,8 @@ input wire [5 : 0] SLOT_0_PCIE_DEBUG_cfg_ltssm_state;
 
   bd_f60c inst (
     .clk(clk),
+    .probe0(probe0),
+    .probe1(probe1),
     .SLOT_0_PCIE_DEBUG_cfg_negotiated_width(SLOT_0_PCIE_DEBUG_cfg_negotiated_width),
     .SLOT_0_PCIE_DEBUG_cfg_current_speed(SLOT_0_PCIE_DEBUG_cfg_current_speed),
     .SLOT_0_PCIE_DEBUG_cfg_err_cor(SLOT_0_PCIE_DEBUG_cfg_err_cor),

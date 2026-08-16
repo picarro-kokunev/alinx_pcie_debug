@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Fri Aug 14 18:40:28 2026
-# Process ID         : 807611
+# Start of session at: Sun Aug 16 13:04:05 2026
+# Process ID         : 1600971
 # Current directory  : /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.runs/synth_1
 # Command line       : vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.runs/synth_1/design_1_wrapper.vds
@@ -13,13 +13,13 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 26.04 LTS
 # Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700
-# CPU Frequency      : 800.412 MHz
+# CPU Frequency      : 860.993 MHz
 # CPU Physical cores : 12
 # CPU Logical cores  : 20
 # Host memory        : 65777 MB
 # Swap memory        : 8589 MB
 # Total Virtual      : 74367 MB
-# Available Virtual  : 65522 MB
+# Available Virtual  : 66044 MB
 #-----------------------------------------------------------
 WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/kokunev/.Xilinx/Vivado/2025.2/strategies/Vivado Implementation Defaults.Vivado Implementation 2025.psg' discarded because strategy with same name already parsed from '/opt/Xilinx_2/2025.2/Vivado/strategies/VDI2025.psg'
 WARNING: [Runs 36-547] User Strategy 'Vivado Implementation Defaults' from file '/home/kokunev/.Xilinx/Vivado/2025.2/strategies/Vivado Implementation Defaults_2.Vivado Implementation 2025.psg' discarded because strategy with same name already parsed from '/opt/Xilinx_2/2025.2/Vivado/strategies/VDI2025.psg'
@@ -42,9 +42,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tfbg484-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 808097
+INFO: [Synth 8-7075] Helper process launched with PID 1601170
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2285.031 ; gain = 480.156 ; free physical = 43946 ; free virtual = 60882
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2289.750 ; gain = 479.844 ; free physical = 45868 ; free virtual = 61468
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'RdDeQ', assumed default net type 'wire' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/d6c9/hdl/verilog/axidma_fifo.vh:179]
 INFO: [Synth 8-11241] undeclared symbol 'cfg_config_space_enable', assumed default net type 'wire' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:4347]
@@ -174,7 +174,13 @@ INFO: [Synth 8-638] synthesizing module 'design_1_c_counter_binary_0_0' [/home/k
 	Parameter C_HAS_SINIT bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'c_counter_binary_v12_0_22' declared at '/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/782b/hdl/c_counter_binary_v12_0_vh_rfs.vhd:4289' bound to instance 'U0' of component 'c_counter_binary_v12_0_22' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:125]
 INFO: [Synth 8-256] done synthesizing module 'design_1_c_counter_binary_0_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_c_counter_binary_0_0/synth/design_1_c_counter_binary_0_0.vhd:66]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:63]
+INFO: [Synth 8-6157] synthesizing module 'design_1_self_pcie_reset_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_self_pcie_reset_0_0/synth/design_1_self_pcie_reset_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'self_pcie_reset' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.srcs/sources_1/new/self_pcie_reset.v:23]
+	Parameter RESET_CNT_W bound to: 19 - type: integer 
+INFO: [Synth 8-226] default block is never used [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.srcs/sources_1/new/self_pcie_reset.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'self_pcie_reset' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.srcs/sources_1/new/self_pcie_reset.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_self_pcie_reset_0_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_self_pcie_reset_0_0/synth/design_1_self_pcie_reset_0_0.v:53]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:69]
 INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:53]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:262]
 INFO: [Synth 8-6157] synthesizing module 'bd_f60c' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:10]
@@ -218,8 +224,8 @@ INFO: [Synth 8-113] binding component instance 'IBUF_N_I' to cell 'IBUF' [/home/
 INFO: [Synth 8-113] binding component instance 'IBUFDS_GTE2_I' to cell 'IBUFDS_GTE2' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:375]
 INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/util_ds_buf.vhd:303]
 INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_0' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0/synth/design_1_util_ds_buf_0.vhd:65]
-WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'design_1_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:75]
-WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'design_1_util_ds_buf_0' has 4 connections declared, but only 3 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:75]
+WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'design_1_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:81]
+WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'design_1_util_ds_buf_0' has 4 connections declared, but only 3 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:81]
 INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
 	Parameter C_SIZE bound to: 1 - type: integer 
 	Parameter C_BUF_TYPE bound to: BUFG - type: string 
@@ -835,8 +841,6 @@ INFO: [Synth 8-251] [1'b0]  ROWS_TX 1 COLS_TX 4 [/home/kokunev/data/git_root/ali
 WARNING: [Synth 8-11581] system function call 'time' not supported [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_bram_top_7x.v:140]
 INFO: [Synth 8-251] [1'b0]  ROWS_RX 1 COLS_RX 4 [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_bram_top_7x.v:140]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0_pcie2_ip_pcie_brams_7x' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_brams_7x.v:65]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xdma_0_0_pcie2_ip_pcie_bram_7x' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_bram_7x.v:63]
-INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' [/opt/Xilinx_2/2025.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
 INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6155] done synthesizing module 'RAMB36E1' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:159948]
 INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' (0#1) [/opt/Xilinx_2/2025.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
@@ -851,44 +855,42 @@ INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0_pcie2_ip_pcie_p
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0_pcie2_ip_pcie_top' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pcie_top.v:62]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_gt_rx_valid_filter_7x.v:191]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xdma_0_0_pcie2_ip_gt_rx_valid_filter_7x' (0#1) [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_gt_rx_valid_filter_7x.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
-INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (0#1) [/opt/Xilinx_2/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2740]
 INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-226] default block is never used [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_eq.v:402]
 INFO: [Synth 8-226] default block is never used [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_0/source/design_1_xdma_0_0_pcie2_ip_pipe_user.v:354]
 INFO: [Synth 8-7071] port 'cfg_fc_vc_sel' of module 'design_1_xdma_0_0_core_top' is unconnected for instance 'inst' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0.sv:598]
 INFO: [Synth 8-7023] instance 'inst' of module 'design_1_xdma_0_0_core_top' has 1313 connections declared, but only 1312 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/synth/design_1_xdma_0_0.sv:598]
-WARNING: [Synth 8-7071] port 'axi_aresetn' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
-WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 64 connections declared, but only 34 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:85]
+WARNING: [Synth 8-7071] port 'axi_aresetn' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_data' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7071] port 'cfg_mgmt_read_write_done' of module 'design_1_xdma_0_0' is unconnected for instance 'xdma_0' [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'design_1_xdma_0_0' has 64 connections declared, but only 34 given [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:91]
 INFO: [Synth 8-3848] Net sl_iport0 in module/entity bd_f60c_ila_lib_0 does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/synth/bd_f60c_ila_lib_0.v:116]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/synth/design_1_system_ila_0_0.v:262]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_lib'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/bd_f60c.v:47]
@@ -1047,7 +1049,7 @@ WARNING: [Synth 8-3848] Net pipe_debug_7 in module/entity design_1_xdma_0_0_core
 WARNING: [Synth 8-3848] Net pipe_debug_8 in module/entity design_1_xdma_0_0_core_top does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:3004]
 WARNING: [Synth 8-3848] Net pipe_debug_9 in module/entity design_1_xdma_0_0_core_top does not have driver. [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/xdma_v4_2/hdl/verilog/design_1_xdma_0_0_core_top.sv:3005]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:82]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/synth/design_1.v:88]
 WARNING: [Synth 8-7129] Port Din[24] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[23] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
 WARNING: [Synth 8-7129] Port Din[22] in module xlslice_v1_0_5_xlslice is either unconnected or has no load
@@ -1150,18 +1152,18 @@ WARNING: [Synth 8-7129] Port PLM_IN_RS in module design_1_xdma_0_0_pcie2_ip_gt_r
 WARNING: [Synth 8-7129] Port pipe_tx_reset in module design_1_xdma_0_0_pcie2_ip_gt_top is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 3047.664 ; gain = 1242.789 ; free physical = 43333 ; free virtual = 60278
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3051.383 ; gain = 1241.477 ; free physical = 45067 ; free virtual = 60673
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3047.664 ; gain = 1242.789 ; free physical = 43354 ; free virtual = 60299
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3051.383 ; gain = 1241.477 ; free physical = 45067 ; free virtual = 60673
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 3047.664 ; gain = 1242.789 ; free physical = 43354 ; free virtual = 60299
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3051.383 ; gain = 1241.477 ; free physical = 45067 ; free virtual = 60673
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.59 . Memory (MB): peak = 3047.664 ; gain = 0.000 ; free physical = 43328 ; free virtual = 60273
+Netlist sorting complete. Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.61 . Memory (MB): peak = 3051.383 ; gain = 0.000 ; free physical = 45095 ; free virtual = 60700
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 186 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1216,28 +1218,28 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 23 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3087.684 ; gain = 0.000 ; free physical = 43362 ; free virtual = 60307
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3091.402 ; gain = 0.000 ; free physical = 45134 ; free virtual = 60740
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 86 instances were transformed.
   CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 72 instances
   CFGLUT5 => SRLC32E: 14 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3099.605 ; gain = 0.000 ; free physical = 43355 ; free virtual = 60301
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3103.324 ; gain = 0.000 ; free physical = 45120 ; free virtual = 60726
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3099.605 ; gain = 1294.730 ; free physical = 42001 ; free virtual = 58962
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 3103.324 ; gain = 1293.418 ; free physical = 43510 ; free virtual = 59128
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 42001 ; free virtual = 58961
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 3111.328 ; gain = 1301.422 ; free physical = 43510 ; free virtual = 59128
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 41991 ; free virtual = 58951
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 3111.328 ; gain = 1301.422 ; free physical = 43494 ; free virtual = 59113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Preparing Guide Design
@@ -1452,11 +1454,12 @@ got a mismatch xdma_v4_2_2_GenericFIFO__parameterized3
 got a mismatch xdma_v4_2_2_GenericFIFO__parameterized4
 WARNING: [Synth 8-6702] IncrSynth : Design change found in an area of the design that prevents previous synthesis information being used, Reverting to default synthesis
 ---------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 40791 ; free virtual = 57740
+Finished Doing Graph Differ : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 3111.328 ; gain = 1301.422 ; free physical = 42349 ; free virtual = 57976
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 40791 ; free virtual = 57740
+Finished Preparing Guide Design : Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 3111.328 ; gain = 1301.422 ; free physical = 42349 ; free virtual = 57976
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'self_pcie_reset'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized1'
@@ -1501,6 +1504,16 @@ INFO: [Synth 8-802] inferred FSM for state register 'fsm_rx_reg' in module 'desi
 INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'design_1_xdma_0_0_pcie2_ip_qpll_drp'
 INFO: [Synth 8-802] inferred FSM for state register 'resetovrd.fsm_reg' in module 'design_1_xdma_0_0_pcie2_ip_pipe_user'
 INFO: [Synth 8-802] inferred FSM for state register 'txsync_fsm.fsm_tx_reg' in module 'design_1_xdma_0_0_pcie2_ip_pipe_sync'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                               00 |                               00
+                 ST_SAVE |                               01 |                               01
+                ST_START |                               10 |                               10
+                 ST_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'User encoding' in module 'self_pcie_reset'
+WARNING: [Synth 8-13157] FSM with state register 'state_reg' is not having reset. This may cause incorrect behavior. User should consider using FSM_SAFE_STATE attribute on the register
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1908,7 +1921,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'resetovrd.fsm_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'txsync_fsm.fsm_tx_reg' using encoding 'one-hot' in module 'design_1_xdma_0_0_pcie2_ip_pipe_sync'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 3107.609 ; gain = 1302.734 ; free physical = 38278 ; free virtual = 55234
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:49 . Memory (MB): peak = 3111.328 ; gain = 1301.422 ; free physical = 39784 ; free virtual = 55412
 ---------------------------------------------------------------------------------
 
 
@@ -2228,7 +2241,7 @@ INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instan
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 3123.621 ; gain = 1318.746 ; free physical = 35236 ; free virtual = 52341
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:07 . Memory (MB): peak = 3127.340 ; gain = 1317.434 ; free physical = 38371 ; free virtual = 54091
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -2236,13 +2249,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst/src_arst' to pin 'design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/design_1_xdma_0_0_axi_stream_intf_i/design_1_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/inverted_reset_inferred/i_0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:47 ; elapsed = 00:01:16 . Memory (MB): peak = 3123.621 ; gain = 1318.746 ; free physical = 36356 ; free virtual = 53525
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:17 . Memory (MB): peak = 3127.340 ; gain = 1317.434 ; free physical = 39633 ; free virtual = 55417
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:55 ; elapsed = 00:01:25 . Memory (MB): peak = 3193.316 ; gain = 1388.441 ; free physical = 36468 ; free virtual = 53639
+Finished Timing Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:01:25 . Memory (MB): peak = 3198.027 ; gain = 1388.121 ; free physical = 39483 ; free virtual = 55274
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -2258,7 +2271,7 @@ INFO: [Synth 8-7052] The timing for the instance design_1_i/xdma_0/inst/udma_wra
 INFO: [Synth 8-7067] Removed DRAM instance design_1_i/xdma_0/inst/udma_wrapper/dma_topi_4/dma_top/dma_enable.wb_eng.dma_pcie_wb_eng/axidma_wb_arb/Fifowhead.fifoInfo/MemArray_reg_0_3_24_29 from module xdma_v4_2_2_udma_top__GB3_tempName due to constant propagation
 INFO: [Synth 8-7067] Removed DRAM instance design_1_i/xdma_0/inst/udma_wrapper/dma_topi_4/dma_top/dma_enable.wb_eng.dma_pcie_wb_eng/WB_DAT_FIFO/MemArray_reg_0_3_24_29 from module xdma_v4_2_2_udma_top__GB3_tempName due to constant propagation
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:01:33 . Memory (MB): peak = 3232.258 ; gain = 1427.383 ; free physical = 35788 ; free virtual = 53146
+Finished Technology Mapping : Time (s): cpu = 00:01:59 ; elapsed = 00:01:33 . Memory (MB): peak = 3237.969 ; gain = 1428.062 ; free physical = 38957 ; free virtual = 54773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2280,139 +2293,139 @@ INFO: [Synth 8-7052] The timing for the instance design_1_i/xdma_0/inst/ram_top/
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:12676]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:12671]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:12669]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1837]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1425]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1435]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1733]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1740]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:1740]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:6090]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:327]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:291]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:356]
-WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:240]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:12676]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:12671]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:12669]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin CLK has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1837]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1425]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1435]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1733]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1740]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:1740]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:6090]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:327]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:291]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:356]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/kokunev/data/git_root/alinx/alinx_streamer_1/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core.vh:240]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:01:38 . Memory (MB): peak = 3329.156 ; gain = 1524.281 ; free physical = 35696 ; free virtual = 53103
+Finished IO Insertion : Time (s): cpu = 00:02:04 ; elapsed = 00:01:38 . Memory (MB): peak = 3334.867 ; gain = 1524.961 ; free physical = 38670 ; free virtual = 54558
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:01:38 . Memory (MB): peak = 3329.156 ; gain = 1524.281 ; free physical = 35701 ; free virtual = 53108
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:04 ; elapsed = 00:01:38 . Memory (MB): peak = 3334.867 ; gain = 1524.961 ; free physical = 38678 ; free virtual = 54564
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35719 ; free virtual = 53127
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:06 ; elapsed = 00:01:40 . Memory (MB): peak = 3351.578 ; gain = 1541.672 ; free physical = 38652 ; free virtual = 54535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35719 ; free virtual = 53127
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:06 ; elapsed = 00:01:40 . Memory (MB): peak = 3351.578 ; gain = 1541.672 ; free physical = 38652 ; free virtual = 54535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35720 ; free virtual = 53129
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:06 ; elapsed = 00:01:41 . Memory (MB): peak = 3351.578 ; gain = 1541.672 ; free physical = 38665 ; free virtual = 54547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:01:40 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35720 ; free virtual = 53129
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:06 ; elapsed = 00:01:41 . Memory (MB): peak = 3351.578 ; gain = 1541.672 ; free physical = 38665 ; free virtual = 54547
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2430,16 +2443,16 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |BUFG          |     5|
 |2     |BUFGCTRL      |     1|
-|3     |CARRY4        |   564|
+|3     |CARRY4        |   569|
 |4     |CFGLUT5       |    86|
 |5     |GTPE2_CHANNEL |     2|
 |6     |GTPE2_COMMON  |     1|
 |7     |IBUFDS_GTE2   |     1|
-|8     |LUT1          |  1327|
-|9     |LUT2          |  1353|
-|10    |LUT3          |  3384|
-|11    |LUT4          |  2252|
-|12    |LUT5          |  2391|
+|8     |LUT1          |  1328|
+|9     |LUT2          |  1354|
+|10    |LUT3          |  3387|
+|11    |LUT4          |  2255|
+|12    |LUT5          |  2394|
 |13    |LUT6          |  4770|
 |14    |MMCME2_ADV    |     1|
 |15    |MUXCY         |    25|
@@ -2458,21 +2471,21 @@ Report Cell Usage:
 |36    |XORCY         |    26|
 |37    |FDCE          |    56|
 |38    |FDPE          |    44|
-|39    |FDRE          | 16254|
-|40    |FDSE          |   121|
+|39    |FDRE          | 16275|
+|40    |FDSE          |   122|
 |41    |IBUF          |     3|
 |42    |OBUF          |     2|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:01:41 . Memory (MB): peak = 3346.867 ; gain = 1541.992 ; free physical = 35724 ; free virtual = 53133
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:06 ; elapsed = 00:01:41 . Memory (MB): peak = 3351.578 ; gain = 1541.672 ; free physical = 38665 ; free virtual = 54547
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 28261 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:57 ; elapsed = 00:01:32 . Memory (MB): peak = 3350.781 ; gain = 1493.965 ; free physical = 41622 ; free virtual = 59031
-Synthesis Optimization Complete : Time (s): cpu = 00:02:08 ; elapsed = 00:01:41 . Memory (MB): peak = 3350.781 ; gain = 1545.906 ; free physical = 41668 ; free virtual = 59040
+Synthesis finished with 0 errors, 0 critical warnings and 28262 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:55 ; elapsed = 00:01:32 . Memory (MB): peak = 3355.492 ; gain = 1493.645 ; free physical = 44410 ; free virtual = 60293
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:01:42 . Memory (MB): peak = 3355.492 ; gain = 1545.586 ; free physical = 44580 ; free virtual = 60425
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.3 . Memory (MB): peak = 3369.648 ; gain = 0.000 ; free physical = 41666 ; free virtual = 59037
+Netlist sorting complete. Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 3378.367 ; gain = 0.000 ; free physical = 44622 ; free virtual = 60461
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'design_1_i/xdma_0/inst/design_1_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 1334 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1339 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf_0/U0/<const0>.
 WARNING: [Netlist 29-1115] Found multi-term driver net: design_1_i/util_ds_buf/U0/<const0>.
@@ -2482,7 +2495,7 @@ INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
 INFO: [Chipscope 16-324] Core: design_1_i/system_ila_0/inst/ila_lib UUID: cd4c83c8-23a6-596d-99ad-09be1335c6b0 
 INFO: [Chipscope 16-324] Core: design_1_i/vio_0 UUID: 01a4b594-7c44-5fa6-bd66-f70f5f031273 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3436.484 ; gain = 0.000 ; free physical = 41608 ; free virtual = 58981
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3443.234 ; gain = 0.000 ; free physical = 44644 ; free virtual = 60482
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 521 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 7 instances
@@ -2493,15 +2506,15 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 18 instances
   RAM64X1S => RAM64X1S (RAMS64E): 9 instances
 
-Synth Design complete | Checksum: afee1d05
+Synth Design complete | Checksum: 55dc9a6f
 INFO: [Common 17-83] Releasing license: Synthesis
-776 Infos, 404 Warnings, 0 Critical Warnings and 0 Errors encountered.
+779 Infos, 405 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:01:50 . Memory (MB): peak = 3436.520 ; gain = 1819.676 ; free physical = 41611 ; free virtual = 58984
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8811.821; main = 2504.104; forked = 6774.764
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17886.984; main = 3436.488; forked = 14767.277
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3460.496 ; gain = 0.000 ; free physical = 41614 ; free virtual = 58989
+synth_design: Time (s): cpu = 00:02:16 ; elapsed = 00:01:51 . Memory (MB): peak = 3443.270 ; gain = 1829.395 ; free physical = 44645 ; free virtual = 60484
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 8818.279; main = 2518.675; forked = 6774.710
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 17888.547; main = 3443.238; forked = 14765.121
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3467.246 ; gain = 0.000 ; free physical = 44645 ; free virtual = 60486
 INFO: [Common 17-1381] The checkpoint '/home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.runs/synth_1/design_1_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3460.496 ; gain = 23.977 ; free physical = 41601 ; free virtual = 59018
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3467.246 ; gain = 23.977 ; free physical = 44675 ; free virtual = 60560
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Aug 14 18:42:28 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 16 13:06:06 2026...

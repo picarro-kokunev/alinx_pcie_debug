@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Fri Aug 14 18:40:25 2026
+//Date        : Sun Aug 16 13:03:46 2026
 //Host        : emerald running 64-bit Ubuntu 26.04 LTS
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,synth_mode=None}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (LED,
     pcie_7x_mgt_rtl_0_rxn,
@@ -42,12 +42,14 @@ module design_1
   wire [0:0]LED;
   wire [25:0]c_counter_binary_0_Q;
   wire [0:0]ilvector_logic_0_Res;
+  wire [0:0]ilvector_logic_0_Res1;
   wire [1:0]pcie_7x_mgt_rtl_0_rxn;
   wire [1:0]pcie_7x_mgt_rtl_0_rxp;
   wire [1:0]pcie_7x_mgt_rtl_0_txn;
   wire [1:0]pcie_7x_mgt_rtl_0_txp;
   wire [0:0]pcie_clk_clk_n;
   wire [0:0]pcie_clk_clk_p;
+  wire self_pcie_reset_0_pcie_reset_n;
   wire sys_rst_n;
   wire [0:0]util_ds_buf_0_BUFG_O;
   wire [0:0]util_ds_buf_IBUF_OUT;
@@ -59,7 +61,11 @@ module design_1
   design_1_c_counter_binary_0_0 c_counter_binary_0
        (.CLK(xdma_0_axi_aclk),
         .Q(c_counter_binary_0_Q));
-  assign ilvector_logic_0_Res = vio_0_probe_out0 & sys_rst_n;
+  assign ilvector_logic_0_Res1 = vio_0_probe_out0 & sys_rst_n;
+  assign ilvector_logic_0_Res = self_pcie_reset_0_pcie_reset_n & ilvector_logic_0_Res1;
+  design_1_self_pcie_reset_0_0 self_pcie_reset_0
+       (.clk(util_ds_buf_0_BUFG_O),
+        .pcie_reset_n(self_pcie_reset_0_pcie_reset_n));
   design_1_system_ila_0_0 system_ila_0
        (.SLOT_0_PCIE_DEBUG_cfg_current_speed(Conn_cfg_current_speed),
         .SLOT_0_PCIE_DEBUG_cfg_err_cor(Conn_cfg_err_cor),

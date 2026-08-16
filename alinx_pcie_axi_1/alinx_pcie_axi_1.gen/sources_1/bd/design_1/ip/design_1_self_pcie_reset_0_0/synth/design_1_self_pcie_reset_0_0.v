@@ -1,17 +1,17 @@
-// (c) Copyright 2023 Advanced Micro Devices, Inc. All rights reserved.
-//
+// (c) Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// (c) Copyright 2022-2026 Advanced Micro Devices, Inc. All rights reserved.
+// 
 // This file contains confidential and proprietary information
-// of AMD and is protected under U.S. and
-// international copyright and other intellectual property
-// laws.
-//
+// of AMD and is protected under U.S. and international copyright
+// and other intellectual property laws.
+// 
 // DISCLAIMER
 // This disclaimer is not a license and does not grant any
 // rights to the materials distributed herewith. Except as
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND AMD HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -26,7 +26,7 @@
 // by a third party) even if such damage or loss was
 // reasonably foreseeable or AMD had been advised of the
 // possibility of the same.
-//
+// 
 // CRITICAL APPLICATIONS
 // AMD products are not designed or intended to be fail-
 // safe, or for use in any application requiring fail-safe
@@ -40,41 +40,36 @@
 // liability of any use of AMD products in Critical
 // Applications, subject only to applicable laws and
 // regulations governing limitations on product liability.
-//
+// 
 // THIS COPYRIGHT NOTICE AND DISCLAIMER MUST BE RETAINED AS
 // PART OF THIS FILE AT ALL TIMES.
-//
+// 
 // DO NOT MODIFY THIS FILE.
-`timescale 1ns / 1ps
-module bd_f60c_ila_lib_0 (
-clk,
 
 
-probe0,
-probe1,
-probe2,
-probe3,
-probe4,
-probe5,
-probe6,
-probe7,
-probe8,
-probe9
+// IP VLNV: xilinx.com:module_ref:self_pcie_reset:1.0
+// IP Revision: 1
+
+(* X_CORE_INFO = "self_pcie_reset,Vivado 2025.2" *)
+(* CHECK_LICENSE_TYPE = "design_1_self_pcie_reset_0_0,self_pcie_reset,{}" *)
+(* CORE_GENERATION_INFO = "design_1_self_pcie_reset_0_0,self_pcie_reset,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=self_pcie_reset,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RESET_CNT_W=19}" *)
+(* IP_DEFINITION_SOURCE = "module_ref" *)
+(* DowngradeIPIdentifiedWarnings = "yes" *)
+module design_1_self_pcie_reset_0_0 (
+  clk,
+  pcie_reset_n
 );
 
-input clk;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
+(* X_INTERFACE_MODE = "slave" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_util_ds_buf_0_IBUF_OUT, INSERT_VIP 0" *)
+input wire clk;
+output wire pcie_reset_n;
 
-
-input [0 : 0] probe0;
-input [0 : 0] probe1;
-input [2 : 0] probe2;
-input [0 : 0] probe3;
-input [0 : 0] probe4;
-input [0 : 0] probe5;
-input [4 : 0] probe6;
-input [0 : 0] probe7;
-input [5 : 0] probe8;
-input [3 : 0] probe9;
-
-
+  self_pcie_reset #(
+    .RESET_CNT_W(19)
+  ) inst (
+    .clk(clk),
+    .pcie_reset_n(pcie_reset_n)
+  );
 endmodule

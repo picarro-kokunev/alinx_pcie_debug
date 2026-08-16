@@ -1,7 +1,7 @@
 // (c) Copyright 2023 Advanced Micro Devices, Inc. All rights reserved.
 //
 // This file contains confidential and proprietary information
-// of AMD and is protected under U.S. and
+// of AMD, Inc. and is protected under U.S. and
 // international copyright and other intellectual property
 // laws.
 //
@@ -11,7 +11,7 @@
 // otherwise provided in a valid license issued to you by
 // AMD, and to the maximum extent permitted by applicable
 // law: (1) THESE MATERIALS ARE MADE AVAILABLE "AS IS" AND
-// WITH ALL FAULTS, AND HEREBY DISCLAIMS ALL WARRANTIES
+// WITH ALL FAULTS, AND XILINX HEREBY DISCLAIMS ALL WARRANTIES
 // AND CONDITIONS, EXPRESS, IMPLIED, OR STATUTORY, INCLUDING
 // BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, NON-
 // INFRINGEMENT, OR FITNESS FOR ANY PARTICULAR PURPOSE; and
@@ -46,35 +46,15 @@
 //
 // DO NOT MODIFY THIS FILE.
 `timescale 1ns / 1ps
-module bd_f60c_ila_lib_0 (
+module design_1_vio_0_0 (
 clk,
 
-
-probe0,
-probe1,
-probe2,
-probe3,
-probe4,
-probe5,
-probe6,
-probe7,
-probe8,
-probe9
+probe_out0
 );
 
 input clk;
 
-
-input [0 : 0] probe0;
-input [0 : 0] probe1;
-input [2 : 0] probe2;
-input [0 : 0] probe3;
-input [0 : 0] probe4;
-input [0 : 0] probe5;
-input [4 : 0] probe6;
-input [0 : 0] probe7;
-input [5 : 0] probe8;
-input [3 : 0] probe9;
+output reg [0 : 0] probe_out0 = 'h1 ;
 
 
 endmodule
