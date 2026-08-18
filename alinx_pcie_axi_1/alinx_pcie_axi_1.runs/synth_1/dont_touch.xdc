@@ -48,6 +48,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_vi
 # IP: bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_util_ds_buf_0_0 || ORIG_REF_NAME==design_1_util_ds_buf_0_0} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_self_pcie_reset_0_0/design_1_self_pcie_reset_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_self_pcie_reset_0_0 || ORIG_REF_NAME==design_1_self_pcie_reset_0_0} -quiet] -quiet
+
 # XDC: /home/kokunev/data/git_root/alinx/alinx_pcie_debug/alinx_pcie_axi_1/alinx_pcie_axi_1.gen/sources_1/bd/design_1/ip/design_1_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==pcie2_fifo_generator_tgt_brdg || ORIG_REF_NAME==pcie2_fifo_generator_tgt_brdg} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xEA0E2C3C471A513A",
+      "boundary_crc": "0xCF1BE11D3638727C",
       "design_src": "SBD",
       "device": "xc7a200tfbg484-2",
       "name": "bd_f60c",
@@ -76,7 +76,7 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_BUSIF": {
-            "value": "SLOT_0_AXI"
+            "value": "SLOT_1_AXI"
           },
           "ASSOCIATED_RESET": {
             "value": "resetn"
@@ -102,6 +102,16 @@
             "value_src": "default"
           }
         }
+      },
+      "probe0": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
+      },
+      "probe1": {
+        "direction": "I",
+        "left": "0",
+        "right": "0"
       },
       "SLOT_0_PCIE_DEBUG_cfg_current_speed": {
         "direction": "I",
@@ -155,7 +165,7 @@
             "value": "FALSE"
           },
           "C_DATA_DEPTH": {
-            "value": "1024"
+            "value": "8192"
           },
           "C_EN_STRG_QUAL": {
             "value": "0"
@@ -170,13 +180,19 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "8"
+            "value": "10"
+          },
+          "C_PROBE0_MU_CNT": {
+            "value": "1"
           },
           "C_PROBE0_TYPE": {
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "3"
+            "value": "1"
+          },
+          "C_PROBE1_MU_CNT": {
+            "value": "1"
           },
           "C_PROBE1_TYPE": {
             "value": "0"
@@ -188,7 +204,7 @@
             "value": "0"
           },
           "C_PROBE2_WIDTH": {
-            "value": "1"
+            "value": "3"
           },
           "C_PROBE3_TYPE": {
             "value": "0"
@@ -200,7 +216,7 @@
             "value": "0"
           },
           "C_PROBE4_WIDTH": {
-            "value": "5"
+            "value": "1"
           },
           "C_PROBE5_TYPE": {
             "value": "0"
@@ -212,12 +228,24 @@
             "value": "0"
           },
           "C_PROBE6_WIDTH": {
-            "value": "6"
+            "value": "5"
           },
           "C_PROBE7_TYPE": {
             "value": "0"
           },
           "C_PROBE7_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "6"
+          },
+          "C_PROBE9_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE9_WIDTH": {
             "value": "4"
           },
           "C_TRIGIN_EN": {
@@ -236,55 +264,67 @@
       "SLOT_0_PCIE_DEBUG_cfg_current_speed_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_current_speed",
-          "ila_lib/probe0"
+          "ila_lib/probe2"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_err_cor_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_err_cor",
-          "ila_lib/probe1"
+          "ila_lib/probe3"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_err_fatal_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_err_fatal",
-          "ila_lib/probe2"
+          "ila_lib/probe4"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_err_nonfatal_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_err_nonfatal",
-          "ila_lib/probe3"
+          "ila_lib/probe5"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_local_error_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_local_error",
-          "ila_lib/probe4"
+          "ila_lib/probe6"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_local_error_valid_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_local_error_valid",
-          "ila_lib/probe5"
+          "ila_lib/probe7"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_ltssm_state_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_ltssm_state",
-          "ila_lib/probe6"
+          "ila_lib/probe8"
         ]
       },
       "SLOT_0_PCIE_DEBUG_cfg_negotiated_width_1": {
         "ports": [
           "SLOT_0_PCIE_DEBUG_cfg_negotiated_width",
-          "ila_lib/probe7"
+          "ila_lib/probe9"
         ]
       },
       "clk_1": {
         "ports": [
           "clk",
           "ila_lib/clk"
+        ]
+      },
+      "probe0_1": {
+        "ports": [
+          "probe0",
+          "ila_lib/probe0"
+        ]
+      },
+      "probe1_1": {
+        "ports": [
+          "probe1",
+          "ila_lib/probe1"
         ]
       }
     }
